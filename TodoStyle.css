@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Grape_Nuts;
+  src: url(./fonts/RubikWetPaint-Regular.ttf);
+}
+
+
+.container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container-wrapper>input {
+  border-radius: 5px;
+  border: 2px black solid;
+  outline: none;
+  text-align: center;
+  width: 30%;
+  background-color: #bdbbc8;
+  font-family: Grape_Nuts;
+}
+
+.btn {
+  cursor: pointer;
+  background: #6aa174;
+  border-radius: 5px;
+  border: 2px black solid;
+  padding: 10px;
+  min-width: 10%;
+  transition: all 0.5s;
+  font-family: Grape_Nuts;
+}
+
+.btn-c {
+  cursor: pointer;
+  background: #6aa174;
+  border-radius: 5px;
+  border: 2px black solid;
+  padding: 10px;
+  min-width: 20%;
+  transition: all 0.5s;
+  font-family: Grape_Nuts;
+}
+
+.btn-c:hover {
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.btn:hover {
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.container {
+  background: url(./mando.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border-radius: 15px;
+  border: 2px black solid;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav>input {
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  border-color: black;
+  text-align: center;
+  background-color: #bdbbc8;
+  font-family: Grape_Nuts;
+  width: 30%;
+}
+
+.nav__text {
+  color: #000000;
+  font-family: Grape_Nuts;
+}
+
+.nav__completed {
+  color: #000000;
+  font-family: Grape_Nuts;
+}
+
+.todo-item {
+  border-radius: 15px;
+  border: 2px black solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  margin-top: 10px;
+  font-family: Grape_Nuts;
+}
+
+.complete {
+  border-radius: 15px;
+  border: 2px #6aa174 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  margin-top: 10px;
+  background: url(./grogu.jpg) no-repeat;
+  background-size: cover;
+}
+
+.star_clon {
+  background: url(./sith.jpg) no-repeat center;
+  background-size: cover;
+  background-position: 50% 40%;
+  border: 2px #a30707 solid;
+}
+
+.star_clon>button {
+  background-color: #a30707;
+}
+
+.star_clon>.column-wrapper>button {
+  background-color: #a30707;
+}
+
+.btn-todo-action {
+  cursor: pointer;
+  transition: all 0.5s;
+  background: #6aa174;
+  border-radius: 5px;
+  border: 2px black solid;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.btn-todo-action:hover {
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+}
+
+.btn-todo-action.complete {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.btn-todo-action.delete:hover {
+  background: #a30707;
+  color: white;
+}
+
+.todo-text {
+  border-radius: 5px;
+  background: white;
+  flex-grow: 0.8;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #bdbbc8;
+  opacity: 0.7;
+  height: 15px;
+}
+
+.column-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.column-wrapper .column-wrapper-date {
+  margin: auto;
+  margin-right: 10px;
+  padding-left: 5px;
+  background: white;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdbbc8;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
